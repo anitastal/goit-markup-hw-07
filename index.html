@@ -379,7 +379,7 @@
     <!-- секция футер -->
     <footer class="footer">
         <div class="footer__wrap">
-            <div>
+            <div class="footer__nav">
                 <a class="logo" href="./index.html">
                     <span class="logo__web">Web</span><span class="footer__logo__studio">Studio</span>
                 </a>
@@ -387,7 +387,7 @@
                     <ul class="address__list">
                         <li class="address__item"><a class="address__link  address__link--place"
                                 href="https://goo.gl/maps/ZaD2ymdkpTnKKArT6" target="_blank"
-                                rel="noopener noreferrer nofollow">г.Киев,пр-т Леси Украинки,26</a></li>
+                                rel="noopener noreferrer nofollow">г.Киев,пр-т Леси Украинки, 26</a></li>
 
                         <li class="address__item"><a class="address__link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -449,12 +449,13 @@
                 <form class="form">
                     <label for="emeil">
                         <input class="form__input" type="emeil" name="emeil" id="emeil" placeholder="E-mail" />
-                        <button class="form__button" type="submit">Подписаться
-                            <svg class="form__icon">
-                                <use href="./img/icons.svg#send"></use>
-                            </svg>
-                        </button>
+
                     </label>
+                    <button class="form__button" type="submit">Подписаться
+                        <svg class="form__icon">
+                            <use href="./img/icons.svg#send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -463,60 +464,60 @@
     <!-- -----МОДАЛЬНОЕ ОКНО-------- -->
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
-            <button data-modal-close class="modal-close" type="button">
-                <svg class="modal-img">
+            <button data-modal-close class="modal__close" type="button">
+                <svg class="modal__img">
                     <use href="./img/icons.svg#cross"></use>
                 </svg>
             </button>
 
             <!-- форма заполнения -->
-            <form class="form js-callback-form">
-                <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
+            <form class="modal__form js-callback-form">
+                <h1 class="modal__title">Оставьте свои данные, мы вам перезвоним</h1>
 
-                <label class="form-field" for="name">
-                    <span class="form-label">Имя</span>
-                    <div class="form-input">
-                        <svg class="form-icon">
+                <label for="name">
+                    <span class="form__label">Имя</span>
+                    <div class="field">
+                        <svg class="field__icon">
                             <use href="./img/icons.svg#person"></use>
                         </svg>
-                        <input type="text" name="name" id="name" />
+                        <input class="field__input" type="text" name="name" id="name" />
                     </div>
-
                 </label>
 
-                <label class="form-field" for="tel">
-                    <span class="form-label">Телефон</span>
-                    <div class="form-input">
-                        <svg class="form-icon">
+                <label for="tel">
+                    <span class="form__label">Телефон</span>
+                    <div class="field">
+                        <svg class="field__icon">
                             <use href="./img/icons.svg#phone"></use>
                         </svg>
-                        <input type="tel" name="tel" id="tel" />
+                        <input class="field__input" type="tel" name="tel" id="tel" />
                     </div>
                 </label>
 
-                <label class="form-field" for="emeil">
-                    <span class="form-label">Почта</span>
-                    <div class="form-input">
-                        <svg class="form-icon">
+                <label for="emeil">
+                    <span class="form__label">Почта</span>
+                    <div class="field">
+                        <svg class="field__icon">
                             <use href="./img/icons.svg#email"></use>
                         </svg>
-                        <input type="emeil" name="emeil" id="emeil" />
+                        <input class="field__input" type="emeil" name="emeil" id="emeil" />
                     </div>
                 </label>
 
-                <label class="form-field" for="comment">
-                    <span class="form-label">Коментарий</span>
-                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                <label for="comment">
+                    <span class="form__label">Коментарий</span>
+                    <textarea class="form__comment" name="comment" id="comment" rows="10"
+                        placeholder="Введите текст"></textarea>
                 </label>
 
-                <label class="form-deal" for="deal">
+                <label class="form__deal" for="deal">
                     <input class="checkbox" type="checkbox" name="deal" value="deal" id="deal">
-                    <span class="check-icon"></span>
+                    <span class="checkbox__icon"></span>
                     Соглашаюсь с рассылкой и принимаю
-                    <a class="modal-link" href="#"> Условия договора </a>
+                    <a class="form__link" href="#"> Условия договора </a>
                 </label>
 
-                <button class="form-button" type="submit">Отправить</button>
+                <button class="modal__button" type="submit">Отправить</button>
 
             </form>
         </div>

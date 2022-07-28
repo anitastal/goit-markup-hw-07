@@ -12,6 +12,9 @@
     @include centeredFlex($type: flex);
     align-items: baseline;
   }
+  &__nav {
+    margin-right: 70px;
+  }
   &__logo__studio {
     color: $header-color;
   }
@@ -42,13 +45,16 @@
   }
 }
 .address {
+  max-width: 231px;
   margin-top: 20px;
   text-decoration: none;
 
   &__list {
     @extend %list;
   }
-
+  &__item {
+    width: 231px;
+  }
   &__item::not(:last-child) {
     margin-bottom: 9px;
   }
@@ -65,7 +71,6 @@
   }
 }
 .join {
-  margin-left: 70px;
   margin-right: 93px;
 
   &__title {
@@ -109,6 +114,8 @@
 }
 
 .form {
+  @include centeredFlex($type: flex);
+
   &__input {
     padding: 0;
     margin: 0;
@@ -131,16 +138,16 @@
 
     margin-left: 12px;
     min-width: 200px;
-    cursor: pointer;
+
     height: 50px;
 
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
+
     line-height: 1.87;
     letter-spacing: 0.06em;
     border: 1px solid $accent-color;
-    border-radius: 4px;
+
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: $header-color;
     background-color: $accent-color;
