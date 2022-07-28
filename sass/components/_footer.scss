@@ -1,0 +1,151 @@
+.footer {
+  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  background-color: $footer-bgcolor;
+
+  &__wrap {
+    @extend %conteiner;
+    @include centeredFlex($type: flex);
+    align-items: baseline;
+  }
+  &__logo__studio {
+    color: $header-color;
+  }
+
+  &__social-links {
+    @extend %list;
+    @include centeredFlex($type: flex);
+    gap: 10px;
+  }
+
+  &__social-links .networks__link {
+    fill: $header-color;
+    background-color: $background-color-social-futter;
+  }
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &__web {
+    color: $accent-color;
+  }
+}
+.address {
+  margin-top: 20px;
+  text-decoration: none;
+
+  &__list {
+    @extend %list;
+  }
+
+  &__item::not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    @extend %link;
+    margin-bottom: 9px;
+    color: $footer-text-color;
+  }
+
+  &__link--place {
+    margin-bottom: 9px;
+    color: $header-color;
+  }
+}
+.join {
+  margin-left: 70px;
+  margin-right: 93px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    line-height: 1.14;
+
+    color: $header-color;
+  }
+}
+.footer__social-links .networks__link:hover,
+.footer__social-links .networks__link:focus {
+  fill: $header-color;
+  color: rgba(255, 255, 255, 0.1);
+  background-color: $accent-color;
+}
+
+.networks {
+  &__link {
+    @extend %link;
+  }
+}
+.subscribe {
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    line-height: 1.14;
+
+    color: $header-color;
+  }
+
+  &__field:input {
+    padding: 0;
+    margin: 0;
+    padding-left: 16px;
+    height: 50px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: $header-color;
+    background-color: $footer-bgcolor;
+  }
+
+  &__button {
+    @include centeredFlex($type: inline-flex);
+    padding-left: 29px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 28px;
+
+    margin-left: 12px;
+    min-width: 200px;
+    cursor: pointer;
+    height: 50px;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--header-color);
+    background-color: var(--accent-color);
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}

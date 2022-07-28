@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --accent-color: #2196F3;
     --background-color: #E5E5E5;
     --background-button: #F5F4FA;
@@ -14,23 +14,22 @@
     --icons-color: #AFB1B8;
     --main-transformation: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
-}
+} */
 
-body {
+/* body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 0.03em;
     list-style: none;
     color: var(--main-text-color);
-    /* background-color: var(--background-color); */
-}
+} */
 
-img {
+/* img {
     display: block;
-    max-width: 100%
-}
+    max-width: 100%;
+} */
 
-.list{
+/* .list{
     padding: 0;
     margin: 0;
 
@@ -46,8 +45,6 @@ img {
     margin-right: auto;
     width: 1200px;
     padding: 0 15px; 
-    
-    /* outline: 2px solid tomato; */
 }
 
 .section{
@@ -67,19 +64,20 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 
 /* СТИЛЬ HEADER */
-.header {
+/* .header {
     background-color: var(--header-color);
     border-bottom: 1px solid var(--border-color-header);
-}
+} */
 
 /* стиль логотипа header footer */
-.header-logo,
+
+/* .header-logo,
 .footer-logo {
-    /* margin-right: 93px; */
+
     padding-top: 24px;
     padding-bottom: 25px;
 
@@ -97,14 +95,16 @@ img {
 .header-studio {
     color: var(--studio-color);
 }
+
 .header-wrap,
 .header-nav {
     display: flex;
     align-items: center;
-}
+} */
 
 /* стиль навигации */
-.header-nav-list,
+
+/* .header-nav-list,
 .header-contact-list{
     display: flex;
     align-items: center;
@@ -180,11 +180,11 @@ img {
 .header-contact-icon-mail:hover,
 .header-contact-icon-tel:hover {
     fill: var(--accent-color)
-}
+} */
 
 
 /* стиль героя */
-.hero {
+/* .hero {
     background-color: var(--background-hero-color);
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -285,9 +285,9 @@ img {
 }
 .features-item:not(:last-child){
     margin-right: 30px;
-}
+} */
 /* ---------стиль иконок особенностей-------- */
-.features-box{
+/* .features-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,11 +301,11 @@ img {
 .features-icon{
     width: 70px;
     height: 70px;
-}
+} */
 
 /* стиль титла чем мы занимаемся  наша команда  клиенты*/
 
-.work-title,
+/* .work-title,
 .team-title,
 .clients-title{
     margin-top: 0;
@@ -315,10 +315,10 @@ img {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-}
+} */
 /* -----стиль чем мы занимаемся---- */
 
-.work-list{    
+/* .work-list{    
     display: flex;
 }
 
@@ -361,10 +361,10 @@ img {
     background-color: rgba(47, 48, 58, 0.8);
 
     transition: opacity var(--main-transformation);
-}
+} */
 
 /* ------стиль команда------ */
-.team{
+/* .team{
     line-height: 1.19;
 }
 .team:nth-child(2n){
@@ -380,12 +380,12 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* .team-card:not(:last-child) {
     margin-right: 30px;
 } */
-.team-list{
+/* .team-list{
     gap: 30px;
 }
 .staff {
@@ -406,7 +406,7 @@ img {
     font-size: 16px;
     color: var(--second-text-color);
     text-align: center;
-}
+} */
 
 
 /* ---------стиль  иконок соцсетей--------- */
@@ -454,7 +454,7 @@ img {
 }
 
 /* -------стиль логотипов компаний---------- */
-.clients-list {
+/* .clients-list {
     display: flex;
     justify-content: space-between;
 }
@@ -478,16 +478,16 @@ img {
     border-radius: 4px;
 
     transition: border-color var(--main-transformation);
-}
+} */
 
-.clients-icon {
+/* .clients-icon {
 
     width: 106px;
     height: 60px;
     fill: var(--icons-color);
 
     transition: fill var(--main-transformation);
-}
+} */
 
 /* -------стиль проэкты ---------*/
 .filters-list{
@@ -576,44 +576,21 @@ img {
 
 /* стиль футера */
 
-.footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
 
-    font-size: 14px;
-    line-height: 1.71;
-    background-color: var(--footer-bgcolor);
-}
-.footer-studio{
-    color: var(--header-color);  
-}
 
-.address{
-    margin-top: 20px;
-    text-decoration: none;
-}
-.address-link{
-    margin-bottom: 9px;
-    color: var(--footer-text-color);
-}
-.address-link.place{
-    margin-bottom: 9px;
-    color: var(--header-color);
-}
-.address-item:not(:last-child){
-    margin-bottom: 9px;
-}
+
+
 
 /* стиль присоедняйтесь */
-.join{
+/* .join{
     display: flex;
     align-items: baseline;
 }
 .join-box{
     margin-left: 70px;
-}
+} */
 
-.join-title,
+/* .join-title,
 .subscribe-title{
     margin: 0;
     margin-bottom: 20px;
@@ -625,12 +602,12 @@ img {
     line-height: 1.14;
 
     color: var(--header-color);
-}
-.subscribe-box{
+} */
+/* .subscribe-box{
     margin-left: 93px;
-}
+} */
 
-.subscripe-field input {
+/* .subscripe-field input {
     padding: 0;
     margin: 0;
     padding-left: 16px;
@@ -641,52 +618,14 @@ img {
     color: var(--header-color);
     background-color: var(--footer-bgcolor);
     
-}
+} */
 
-.subscripe-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 29px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 28px;
-    
-    margin-left: 12px;
-    min-width: 200px;
-    cursor: pointer;
-    height: 50px;
 
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--header-color);
-    background-color: var(--accent-color);
-}
-.subscripe-icon{
-   
-    width: 24px;
-    height: 24px;
 
-    margin-left: 10px;
-}
 
-.footer-social-links{
-    display: flex;
-    gap: 10px;
-}
 
-.footer-social-links .networks-link:hover,
-.footer-social-links .networks-link:focus {
-    fill: var(--header-color);
-    color: rgba(255, 255, 255, 0.1);
-    background-color: var(--accent-color);
-}
+
+
 
 /* ------МОДАЛЬНОЕ ОКНО-------- */
 .backdrop{
@@ -881,9 +820,7 @@ textarea{
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
-.modal-link{
 
-}
 .form-button{
     margin-top: 30px;
     padding: 10px 56px;

@@ -1,0 +1,53 @@
+.features {
+  @extend %section;
+  padding-bottom: 0;
+
+  &__wrap {
+    @extend %conteiner;
+  }
+
+  &__list {
+    @extend %list;
+    @include centeredFlex($type: flex);
+    gap: 30px;
+  }
+
+  &__item {
+    width: 270px;
+    text-align: left;
+  }
+
+  &__box {
+    @include centeredFlex($type: flex);
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $background-button;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+    color: $second-text-color;
+  }
+}
