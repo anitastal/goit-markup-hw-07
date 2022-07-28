@@ -84,7 +84,7 @@
 .footer__social-links .networks__link:hover,
 .footer__social-links .networks__link:focus {
   fill: $header-color;
-  color: rgba(255, 255, 255, 0.1);
+  color: $background-color-social-futter;
   background-color: $accent-color;
 }
 
@@ -106,8 +106,10 @@
 
     color: $header-color;
   }
+}
 
-  &__field:input {
+.form {
+  &__input {
     padding: 0;
     margin: 0;
     padding-left: 16px;
@@ -120,6 +122,7 @@
   }
 
   &__button {
+    @extend %button;
     @include centeredFlex($type: inline-flex);
     padding-left: 29px;
     padding-top: 10px;
@@ -136,11 +139,11 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--header-color);
-    background-color: var(--accent-color);
+    color: $header-color;
+    background-color: $accent-color;
   }
 
   &__icon {
