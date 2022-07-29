@@ -51,38 +51,3 @@
     text-align: center;
   }
 }
-.social__links {
-  @include centeredFlex($type: flex);
-  @extend %list;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
-  gap: 10px;
-}
-.networks {
-  @extend %list;
-
-  &__link {
-    @extend %link;
-    @include centeredFlex($type: flex);
-    justify-content: center;
-    border: transparent;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    // padding: 12px;
-
-    fill: $icons-color;
-
-    transition: fill var(--main-transformation), background-color var(--main-transformation);
-  }
-  &__link:hover,
-  &__link:focus {
-    fill: $header-color;
-    background-color: $accent-color;
-  }
-  &__icon {
-    width: 20px;
-    height: 20px;
-  }
-}

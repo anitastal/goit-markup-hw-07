@@ -280,7 +280,7 @@ img {
   max-width: 100%;
 }
 
-.address__list, .footer__social-links, .clients__list, .networks, .social__links, .team__list, .work__list, .features__list, .nav,
+.networks, .social__links, .address__list, .footer__social-links, .clients__list, .team__list, .work__list, .features__list, .nav,
 .contact {
   padding: 0;
   margin: 0;
@@ -289,7 +289,7 @@ img {
   text-decoration: none;
 }
 
-.address__link, .networks__link, .contact__link, .nav__link, .nav,
+.networks__link, .address__link, .contact__link, .nav__link, .nav,
 .contact {
   text-decoration: none;
 }
@@ -615,46 +615,6 @@ img {
   text-align: center;
 }
 
-.social__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
-  gap: 10px;
-}
-
-.networks__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: transparent;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  fill: #afb1b8;
-  -webkit-transition: fill var(--main-transformation), background-color var(--main-transformation);
-  transition: fill var(--main-transformation), background-color var(--main-transformation);
-}
-.networks__link:hover, .networks__link:focus {
-  fill: #ffffff;
-  background-color: #2196f3;
-}
-.networks__icon {
-  width: 20px;
-  height: 20px;
-}
-
 .clients__title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -850,6 +810,46 @@ img {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+.social__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.networks__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: transparent;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  -webkit-transition: fill var(--main-transformation), background-color var(--main-transformation);
+  transition: fill var(--main-transformation), background-color var(--main-transformation);
+}
+.networks__link:hover, .networks__link:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.networks__icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* ------МОДАЛЬНОЕ ОКНО-------- */
