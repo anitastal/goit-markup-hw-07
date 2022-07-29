@@ -18,17 +18,6 @@
   &__logo__studio {
     color: $header-color;
   }
-
-  &__social-links {
-    @extend %list;
-    @include centeredFlex($type: flex);
-    gap: 10px;
-  }
-
-  &__social-links .networks__link {
-    fill: $header-color;
-    background-color: $background-color-social-futter;
-  }
 }
 
 .logo {
@@ -86,18 +75,7 @@
     color: $header-color;
   }
 }
-.footer__social-links .networks__link:hover,
-.footer__social-links .networks__link:focus {
-  fill: $header-color;
-  color: $background-color-social-futter;
-  background-color: $accent-color;
-}
 
-.networks {
-  &__link {
-    @extend %link;
-  }
-}
 .subscribe {
   &__title {
     margin: 0;
